@@ -406,21 +406,27 @@
             </a></li>
         </ul>
       </div>
-      <div class="subscription footer-soc">
-        <div><p class="footer-soc-text">підпишіться на розсилку</p>
-          <label>
-          <input type="email" class="footer-subscribe" name="subscribe" placeholder="E-mail">
-        </label>
-      </div>
-       <div>
-        <button class="subscribe-btn" type="button">Підписатися
-          <svg class="icon-send" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-send">
-            </use>
-          </svg>
-        </button>
-       </div>   
-      </div>
+      <form>
+        <div class="subscription footer-soc">
+          <div>
+            <p class="footer-soc-text">підпишіться на розсилку</p>
+
+            <label>
+              <input type="email" class="footer-subscribe" name="subscribe" placeholder="E-mail">
+            </label>
+
+          </div>
+          <div>
+            <button class="subscribe-btn" type="submit">Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </form>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -432,7 +438,7 @@
       </button>
       <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
       <form>
-        <label>
+        <label class="modal-field">
           <span class="modal-label-text">Ім'я</span>
           <span class="modal-input-wrap">
             <input type="text" class="modal-input" name="user-name" required>
@@ -441,7 +447,7 @@
             </svg>
           </span>
         </label>
-        <label>
+        <label class="modal-field">
           <span class="modal-label-text">Телефон</span>
           <span class="modal-input-wrap">
             <input type="tel" class="modal-input" name="user-tel" required>
@@ -450,7 +456,7 @@
             </svg>
           </span>
         </label>
-        <label>
+        <label class="modal-field">
           <span class="modal-label-text">Пошта</span>
           <span class="modal-input-wrap">
             <input type="email" class="modal-input" name="user-email" required>
@@ -459,7 +465,7 @@
             </svg>
           </span>
         </label>
-        <label>
+        <label class="modal-field-area">
           <span class="modal-label-text">Коментар</span>
           <textarea name="comment" class="modal-area" placeholder="Введіть текст"></textarea>
         </label>
