@@ -780,6 +780,7 @@ img {
 }
 
 .modal-area {
+  display: block;
   width: 100%;
   height: 120px;
   padding-left: 16px;
